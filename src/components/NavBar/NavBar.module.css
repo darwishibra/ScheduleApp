@@ -1,0 +1,70 @@
+.navbar {
+    position: fixed;
+    height: var(--navbar-height);
+    background-color: black;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#navLogo {
+    padding: 18.5px 9vw;
+    font-size: 26px;
+    font-weight: 900;
+    font-family: 'Inter', sans-serif;
+    height: var(--navbar-height);
+}
+
+.navbarNav {
+    color: white;
+    height: var(--navbar-height);
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#navPages {
+    height: var(--navbar-height);
+    text-decoration: none;
+    padding: 0px 9vw;
+    display: flex;
+    justify-content: space-around;
+    width: 45vw;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    top: 0;
+    left: 0;
+    padding: 21px;
+    position: relative;
+}
+
+.navLink::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    height: 3.6px;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-out;
+    bottom: 0;
+    left: 0;
+    transform-origin: bottom right;
+
+}
+
+.navLink:hover {
+    font-weight: 600;
+}
+
+.navLink:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
