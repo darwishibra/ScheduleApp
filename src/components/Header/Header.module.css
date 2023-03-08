@@ -1,0 +1,22 @@
+.header {
+    color: white;
+    background-color: #FFD600;
+    height: 60vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    padding-top: var(--navbar-height);
+    font-family: 'Inter', sans-serif;
+}
+
+
+#homeHeading {
+    margin: 0px;
+}
+  

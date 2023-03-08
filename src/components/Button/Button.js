@@ -1,3 +1,5 @@
+import styles from "./Button.module.css"
+
 function Button({color, text, onClick}) {
   return (
     <button type="button" style={{color: color}} onClick={onClick}>
